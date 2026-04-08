@@ -25,5 +25,5 @@ It allows users to manage contacts efficiently using file handling.
 ## ▶️ How to Run
 
 ```bash
-gcc main.c contact.c
+gcc *.c
 ./a.out
