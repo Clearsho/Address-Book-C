@@ -1,19 +1,29 @@
-# Address-Book-C
-C-based Address Book Project using File Handling
-# Address Book in C
+# 📒 Address Book in C
 
-## Features
-- Add Contact
-- Search Contact
-- Edit Contact
-- Delete Contact
-- File Handling
+## 📌 About Project
+This is a menu-driven Address Book application developed in C.
+It allows users to manage contacts efficiently using file handling.
 
-## Technologies Used
+---
+
+## 🚀 Features
+✔ Add Contact  
+✔ Search Contact  
+✔ Edit Contact  
+✔ Delete Contact  
+✔ List Contacts  
+✔ Save contacts to file  
+
+---
+
+## 🛠 Technologies Used
 - C Programming
 - File Handling
 
-## How to Run
+---
+
+## ▶️ How to Run
+
 ```bash
-gcc main.c contact.c or *.c 
+gcc main.c contact.c
 ./a.out
