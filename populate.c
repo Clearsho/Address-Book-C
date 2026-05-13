@@ -17,7 +17,8 @@ void populateAddressBook(AddressBook* addressBook)
 {
     addressBook->contactCount = 10;
     for(int i = 0; i < 10; i++)
-    {
-        addressBook->contacts[i] = dummyContacts[i];
-    }
+{
+    addressBook->contacts[i] = dummyContacts[i];
+    addressBook->contactCount++;
+}
  }
