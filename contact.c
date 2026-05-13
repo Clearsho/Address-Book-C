@@ -67,11 +67,11 @@ void createContact(AddressBook *addressBook)
 {
 	/* Define the logic to create a Contacts */
     printf("Enter name: ");
-    scanf("%s", addressBook->contacts[addressBook->contactCount].name);
+    scanf("%49s", addressBook->contacts[addressBook->contactCount].name);
     printf("Enter phone number: ");
-    scanf("%s", addressBook->contacts[addressBook->contactCount].phone);
+    scanf("%19s", addressBook->contacts[addressBook->contactCount].phone);
     printf("Enter email: ");
-    scanf("%s", addressBook->contacts[addressBook->contactCount].email);
+    scanf("%49s", addressBook->contacts[addressBook->contactCount].email);
 
     addressBook->contactCount++;
 
@@ -115,7 +115,7 @@ void searchContact(AddressBook *addressBook)
 
         case 2:
             printf("Enter phone: ");
-            scanf("%s", phone);
+            scanf("%19s", phone);
 
             for (int i = 0; i < addressBook->contactCount; i++)
             {
@@ -134,7 +134,7 @@ void searchContact(AddressBook *addressBook)
 
         case 3:
             printf("Enter email: ");
-            scanf("%s", email);
+            scanf("%49s", email);
 
             for (int i = 0; i < addressBook->contactCount; i++)
             {
@@ -225,12 +225,12 @@ void editContact(AddressBook *addressBook)
     else if (editChoice == 2)
     {
         printf("Enter new phone: ");
-        scanf("%s", addressBook->contacts[index].phone);
+        scanf("%19s", addressBook->contacts[index].phone);
     }
     else if (editChoice == 3)
     {
         printf("Enter new email: ");
-        scanf("%s", addressBook->contacts[index].email);
+        scanf("%49s", addressBook->contacts[index].email);
     }
 
     printf("Contact updated successfully!\n");
