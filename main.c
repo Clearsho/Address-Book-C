@@ -23,7 +23,12 @@ int main() {
     printf("5.List contact\n");
     printf("6.Save and exit\n");
     printf("Enter your choice\n");
-    scanf("%d", &choice);
+    if(scanf("%d", &choice) != 1)
+{
+    printf("Invalid input\n");
+    while(getchar() != '\n');
+    continue;
+};
 
     switch(choice)
     {
